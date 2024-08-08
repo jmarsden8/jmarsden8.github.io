@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/jmarsden8.guthub.io/static/css/main.84835171.css",
+    "main.js": "/jmarsden8.guthub.io/static/js/main.e540e163.js",
+    "static/js/453.864088f9.chunk.js": "/jmarsden8.guthub.io/static/js/453.864088f9.chunk.js",
+    "static/media/alien_invasion2.png": "/jmarsden8.guthub.io/static/media/alien_invasion2.4de5cb57d514b99a9287.png",
+    "static/media/cssEssentials.png": "/jmarsden8.guthub.io/static/media/cssEssentials.b015d365c2a4ef8abb44.png",
+    "static/media/htmlWebEssentials.png": "/jmarsden8.guthub.io/static/media/htmlWebEssentials.3d0cb844e17b2b85f870.png",
+    "static/media/JavaScript.png": "/jmarsden8.guthub.io/static/media/JavaScript.27aa829ccb695d652c68.png",
+    "static/media/python.png": "/jmarsden8.guthub.io/static/media/python.35a989bf0d60967d90de.png",
+    "static/media/GitHubGit.png": "/jmarsden8.guthub.io/static/media/GitHubGit.f7ca04d28736ce786a69.png",
+    "static/media/CommandLineCourse.png": "/jmarsden8.guthub.io/static/media/CommandLineCourse.76cc32d59246bfad073c.png",
+    "static/media/alien_invasion1.png": "/jmarsden8.guthub.io/static/media/alien_invasion1.ea3dd87cd4b53b78bee9.png",
+    "static/media/stock-quote.png": "/jmarsden8.guthub.io/static/media/stock-quote.74f6d16fbba5c954c8c3.png",
+    "static/media/stock-register.png": "/jmarsden8.guthub.io/static/media/stock-register.7d47ca61d2b1e59e52bb.png",
+    "static/media/stock-login.png": "/jmarsden8.guthub.io/static/media/stock-login.a582b23345d454b28afb.png",
+    "index.html": "/jmarsden8.guthub.io/index.html",
+    "main.84835171.css.map": "/jmarsden8.guthub.io/static/css/main.84835171.css.map",
+    "main.e540e163.js.map": "/jmarsden8.guthub.io/static/js/main.e540e163.js.map",
+    "453.864088f9.chunk.js.map": "/jmarsden8.guthub.io/static/js/453.864088f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84835171.css",
+    "static/js/main.e540e163.js"
+  ]
+}
