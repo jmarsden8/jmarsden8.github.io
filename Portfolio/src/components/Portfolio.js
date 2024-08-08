@@ -9,7 +9,7 @@ import cssCertificate from "../images/cssEssentials.png";
 import gitHubCertificate from "../images/GitHubGit.png";
 import stockLogin from "../images/stock-login.png";
 import stockRegister from "../images/stock-register.png";
-import stockQuote from "../images/stock-register.png";
+import stockQuote from "../images/stock-quote.png";
 
 export const Portfolio = () => {
   const [galleryVisibility, setGalleryVisibility] = useState({
