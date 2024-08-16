@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jmarsden8.guthub.io/static/css/main.84835171.css",
-    "main.js": "/jmarsden8.guthub.io/static/js/main.e540e163.js",
-    "static/js/453.864088f9.chunk.js": "/jmarsden8.guthub.io/static/js/453.864088f9.chunk.js",
+    "main.js": "/jmarsden8.guthub.io/static/js/main.f7767cb0.js",
+    "static/js/453.f0ca1b2e.chunk.js": "/jmarsden8.guthub.io/static/js/453.f0ca1b2e.chunk.js",
     "static/media/alien_invasion2.png": "/jmarsden8.guthub.io/static/media/alien_invasion2.4de5cb57d514b99a9287.png",
     "static/media/cssEssentials.png": "/jmarsden8.guthub.io/static/media/cssEssentials.b015d365c2a4ef8abb44.png",
     "static/media/htmlWebEssentials.png": "/jmarsden8.guthub.io/static/media/htmlWebEssentials.3d0cb844e17b2b85f870.png",
@@ -16,11 +16,11 @@
     "static/media/stock-login.png": "/jmarsden8.guthub.io/static/media/stock-login.a582b23345d454b28afb.png",
     "index.html": "/jmarsden8.guthub.io/index.html",
     "main.84835171.css.map": "/jmarsden8.guthub.io/static/css/main.84835171.css.map",
-    "main.e540e163.js.map": "/jmarsden8.guthub.io/static/js/main.e540e163.js.map",
-    "453.864088f9.chunk.js.map": "/jmarsden8.guthub.io/static/js/453.864088f9.chunk.js.map"
+    "main.f7767cb0.js.map": "/jmarsden8.guthub.io/static/js/main.f7767cb0.js.map",
+    "453.f0ca1b2e.chunk.js.map": "/jmarsden8.guthub.io/static/js/453.f0ca1b2e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84835171.css",
-    "static/js/main.e540e163.js"
+    "static/js/main.f7767cb0.js"
   ]
 }

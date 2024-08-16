@@ -1,74 +1,39 @@
-import React, { useState } from "react";
+import Swal from 'sweetalert2'
 
-export const Contact = () => {
-  const [formData, setFormData] = useState({
-    fname: "",
-    lname: "",
-    eaddress: "",
-    mobile: "",
-  });
+const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+    formData.append("access_key", "b3081965-8bb8-4e05-85aa-93c5e5dc62e3");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-    try {
-      const response = await fetch("http://localhost:3000/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
 
-      const result = await response.json();
-      if (response.ok) {
-        alert("Data received: " + JSON.stringify(result.data));
-      } else {
-        alert("Error: " + result.message);
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred while submitting the form.");
+    if (res.success) {
+      Swal.fire("Message sent!");
     }
   };
-
-  return (
+    return (
     <div className="max-w-md mx-auto p-4 bg-white shadow-md rounded-md">
-      <form id="contactForm" onSubmit={handleSubmit}>
+      <form id="contactForm" onSubmit={onSubmit}>
         <div className="mb-4">
-          <label htmlFor="fname" className="block text-gray-700">
-            First name:
+          <label htmlFor="fullname" className="block text-gray-700">
+            Full Name:
           </label>
           <input
             type="text"
-            id="fname"
-            name="fname"
-            value={formData.fname}
-            onChange={handleChange}
-            required
-            className="w-full px-3 py-2 border rounded-md"
-          />
-        </div>
-
-        <div className="mb-4">
-          <label htmlFor="lname" className="block text-gray-700">
-            Last name:
-          </label>
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            value={formData.lname}
-            onChange={handleChange}
-            required
+            id="fullname"
+            name="fullname"
             className="w-full px-3 py-2 border rounded-md"
           />
         </div>
@@ -79,28 +44,20 @@ export const Contact = () => {
           </label>
           <input
             type="email"
-            id="eaddress"
-            name="eaddress"
-            value={formData.eaddress}
-            onChange={handleChange}
-            required
+            id="email"
+            name="email"
             className="w-full px-3 py-2 border rounded-md"
           />
         </div>
 
         <div className="mb-4">
-          <label htmlFor="mobile" className="block text-gray-700">
-            Mobile number:
+          <label htmlFor="message" className="block text-gray-700">
+            Your message:
           </label>
-          <input
-            type="text"
-            id="mobile"
-            name="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            required
-            className="w-full px-3 py-2 border rounded-md"
-          />
+          <textarea
+            id="message"
+            name="message"
+            className="w-full px-3 py-2 border rounded-md"></textarea>
         </div>
 
         <div>
@@ -115,3 +72,4 @@ export const Contact = () => {
     </div>
   );
 };
+export default Contact;
